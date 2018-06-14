@@ -11,6 +11,7 @@
 (function() {
     'use strict';
 
+    // thanks https://stackoverflow.com/questions/16745773/embed-favicon-using-a-userscript
     window.addEventListener('load', function() {
         var favicon = document.querySelector('link[rel~="icon"]');
         var clone = favicon.cloneNode(!0);
